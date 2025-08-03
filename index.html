@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <div class="profile-info">
+        <div class="profile-avatar" id="profileAvatar">?</div>
+        <div class="profile-details">
+          <h2 id="profileName" onclick="editProfile('name')">Click to set name</h2>
+          <p id="profileJob" onclick="editProfile('job')">Click to set profession</p>
+        </div>
+      </div>
+      <div class="time-section">
+        <h3>Today</h3>
+        <div class="current-date"></div>
+        <div class="current-time"></div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="container-stats">
+      <div class="details">
+        <h1>TO DO APP</h1>
+        <p>KEEP IT UP!!</p>
+        <div id="progressBar">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <div class="stats-numbers">
+        <p id="numbers">0 / 0</p>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <form id="taskForm">
+      <input type="text" name="tugas" id="task" placeholder="Write your task" required />
+      <input type="date" id="date" required />
+      <select id="priority" required>
+        <option value="" disabled selected>Priority</option>
+        <option value="high">Tinggi</option>
+        <option value="medium">Sedang</option>
+        <option value="low">Rendah</option>
+      </select>
+      <button type="submit" id="newTask">+</button>
+    </form>
+
+    <button type="button" class="delete-all">Delete All</button>
+
+    <ul class="task-list"></ul>
+  </div>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

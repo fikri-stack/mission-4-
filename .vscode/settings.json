@@ -1,0 +1,16 @@
+{
+ "editor.fontSize": 13,
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.lineHeight": 24,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "SynthWave '84",
+  "editor.smoothScrolling": true,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true
+
+}
